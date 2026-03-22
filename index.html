@@ -61,6 +61,10 @@ nav a {
   text-align: center;
 }
 
+.section:nth-child(even) {
+  background: #eef3f8;
+}
+
 .cards {
   display: flex;
   gap: 20px;
@@ -70,9 +74,15 @@ nav a {
 
 .card {
   background: white;
-  padding: 20px;
-  width: 250px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 25px;
+  width: 260px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 /* FOOTER */
